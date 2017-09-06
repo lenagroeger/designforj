@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300,700,100,400' rel='stylesheet' type='text/css'>
-    <title>Intro to Design </title>
+    <title>Design for Non-Designers</title>
     <link rel="stylesheet" href="reveal.css">
 <script type="text/javascript" src="jquery.js" ></script>
 
@@ -17,19 +17,32 @@ body {
   font-size: 26px
 }
 
-.reveal h1, .reveal h2 {
+.reveal h2 {
 font-weight: bold;
 color:#cb8435;
 display: block;
 clear: both;
 border-bottom: 0px;
 font-size: 135px;
+}
+
+.reveal h1 {
+  line-height: 1em;
+  font-size: 245px;
+  font-weight: bold;
+display: block;
+clear: both;
+border-bottom: 0px;
+color:#fff;
 
 }
 
-.reveal .intro-page h1 {
-  line-height: 1em;
-  font-size: 245px
+.reveal h1.extra {
+  font-size: 300px
+}
+
+.reveal h1.extra.orange {
+  color:#cb8435;
 }
 
 .reveal .main-section h2 {
@@ -55,17 +68,11 @@ font-size: 135px;
 }
 
 
-
-.reveal h1 {
-  text-transform: uppercase;
-  font-size: 200px;
-}
-
 .reveal h3 {
   font-weight: 300;
   display: block;
-  font-size: 70px;
-  color: #000;
+  font-size: 80px;
+  color: #fff;
   font-weight: 400;
   margin-bottom: 20px
 }
@@ -96,12 +103,14 @@ max-width: 100%;
 .reveal .slides>section {
   color:#cecece;
   padding-top: 9%;
-/*  background: url("imgs/background.png") top left;
-*/}
+  background: #466163;
+  }
 
-
+.reveal .slides>section.protip {
+  background: #fff
+}
 .reveal .slides>section.main-section {
-      background: #cb8435;
+      background: #466163;
 }
 .reveal .sliders>section.topic {
   background: rgb(187, 107, 0);
@@ -116,7 +125,7 @@ height: 100%;
 }
 
 .reveal h1.invisible{
-    color: #FFFFFF;
+        color: #466163;
     text-shadow: 0px 0px 30px rgba(0,0,0,.3);
 }
 .reveal h5 span {
@@ -157,7 +166,7 @@ section div.double-wide img{
   float: right;
 }
 
-.intro-page {
+.reveal .slides>section.intro-page {
   background: url("imgs/colors.gif") no-repeat top left;
   background-size: 100%;
 
@@ -165,7 +174,7 @@ section div.double-wide img{
 }
 
 .intro-page h1 {
-  color: #fff
+  margin-top: 120px;
 }
 </style>
   </head>
@@ -177,13 +186,14 @@ section div.double-wide img{
       <div class="slides">
 
         <section class="intro-page">
-          <h3>Intro to</h3>
+          
           <h1>Design</h1>
+          <h3>for Non-Designers</h3>
         </section>
 
         <section>
           <h2>OR</h2>
-          <h3>why anyone in journalism <br>should give a crap about design</h3>
+          <h3>why anyone in journalism <br>should care about design</h3>
 
         </section>
 
@@ -249,7 +259,7 @@ section div.double-wide img{
           <img src="imgs/craigslist.jpg">
         </section>
 
-       <section class="header-section">
+       <section class="main-section">
           <h2>Design Principles</h2>
           <h3>Four tips for designing anything, ever. </h3>
           <img src="imgs/mindblown.gif">
@@ -321,7 +331,7 @@ section div.double-wide img{
         </section>
 
 
-        <section>
+        <section class="protip">
           <img  src="imgs/protip1.jpg">
         </section>
 
@@ -354,19 +364,6 @@ section div.double-wide img{
 
 
         <section class="main-section">
-          <h3>Now, an Exercise!</h3>
-          <img src="imgs/ladle.jpg">
-        </section>
-
-
-        <section>
-          <h3>Before & After</h3>
-          <img src="imgs/ladle.jpg">
-          <img src="imgs/ladle2.jpg">
-        </section>
-
-
-        <section class="main-section">
           <h2>Contrast</h2>
           <h3>If its not the same, make it very different</h3>
           <img width="300px" src="imgs/bigsmall.png">
@@ -374,7 +371,7 @@ section div.double-wide img{
 
        <section>
        <h3>Contrast</h3>
-          <img width="900px" src="imgs/contrastsize.jpg">
+          <h1 class="extra">SIZE</h1>
           <p>You can't contrast 12pt with 13pt</p>
         </section>
        <section>
@@ -383,7 +380,7 @@ section div.double-wide img{
         </section>
        <section>
        <h3>Contrast</h3>
-          <img  src="imgs/contrastcolor.jpg">
+          <h1 class="extra orange">COLOR</h1>
           <p>You can't contrast black with dark brown. srsly.</p>
         </section>
 
@@ -398,7 +395,7 @@ section div.double-wide img{
         </section>
 
 
-       <section>
+       <section class="protip">
           <img  src="imgs/protip2.jpg">
         </section>
 
@@ -409,8 +406,8 @@ section div.double-wide img{
         </section>
 
        <section>
-        <h3>don't be a </h3>
-          <img src="imgs/wimp.jpg">
+          <h3>don't be a </h3>
+          <h1 class="extra">WIMP</h1>
           <p>if it's supposed to be different, make it different for goodness sake!</p>
         </section>
 
@@ -422,7 +419,7 @@ section div.double-wide img{
         </section>
 
 
-       <section>
+       <section class="protip">
           <img src="imgs/protip3.jpg">
         </section>
 
@@ -508,18 +505,17 @@ section div.double-wide img{
       </section>
 
 
-       <section class="main-section">
-          <h3>Now, an Exercise!</h3>
-          <img src="imgs/resumebefore.jpg">
-        </section>
 
-        <section>
-          <h3>Before & After</h3>
-          <img src="imgs/resumebeforeafter.jpg">
-        </section>
+      <section>
+        <div>
+    
+          <h3 style="padding-top:100px">Thanks.</h3>
+          <p style="width:100%"> Lena Groeger | @lenagroeger </p>
 
+        </div>
+      </section>
 
-      <section class="header-section">
+ <!--      <section class="header-section">
         <h2>Details</h2>
         <h3>The details are not the details.<br>
         They MAKE the design. <span>CHARLES EAMES</span></h3>
@@ -603,24 +599,16 @@ section div.double-wide img{
 
         <section><h3>Prevent Errors</h3><img src="imgs/cancelPayment1PreventErrors.jpg"></section>
 
-        <section class="main-section">
-          <h2>Surprise me!</h2>
-          <h3>(and just make my life easier)</h3>
-          <img src="imgs/shakephone.gif">
-        </section>
 
+      <section>
+        <div>
+    
+          <h3 style="padding-top:100px">Thanks.</h3>
+          
+          <p> Lena Groeger | @lenagroeger </p>
 
-        <section>
-          <div class="double">
-            <h3>Humor</h3>
-          <img width="500px" src="imgs/surprisesnickers.jpg">
-          <img width="500px" src="imgs/surprisegooglevoice.jpg">
         </div>
-        </section>
-
-        <section><h3>Delight</h3>
-          <img src="imgs/spinner.gif">
-        </section>
+      </section> -->
 
 
 
