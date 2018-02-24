@@ -1,5 +1,5 @@
 
-#Design for Journalists
+# Design for Journalists
 
 First I have a question. When I say "design", what words come to mind?
 
